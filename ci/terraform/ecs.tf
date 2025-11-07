@@ -219,7 +219,7 @@ data "aws_security_group" "allow_access_to_frontend_redis" {
   filter {
     name   = "group-name"
     values = ["${var.environment}-allow-access-to-frontend-redis-20220126153336906700000002"]
-    # temporarily hardcoding value only for sandpit because TF is now only used in sandpit and will be deleted
+    # temporarily hardcoding value only for dev because TF is now only used in dev and will be deleted
   }
 }
 

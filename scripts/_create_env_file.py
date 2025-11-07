@@ -193,7 +193,7 @@ class StateGetter:
                 "AWS auth error: SSO Profile %s could not be found. Ensure you've set "
                 "up your AWS profiles correctly, as-per "
                 "https://govukverify.atlassian.net/l/cp/fcp74bCB (How to deploy to "
-                "sandpit / authdev# environments). If you have done this and are "
+                "authdev# environments). If you have done this and are "
                 "still seeing this error, you probably don't have access to this AWS "
                 "account. Please contact the team for help.",
                 aws_profile_name,
@@ -499,7 +499,7 @@ def main(
 
 
 NAMED_ENVIRONMENTS = [
-    "sandpit",
+    "authdev3",
     "dev",
     "authdev1",
     "authdev2",
@@ -520,7 +520,7 @@ def base_command(deploy_env: str):
         )
         sys.exit(1)
 
-    if deploy_env in ["sandpit", "build"]:
+    if deploy_env in ["build"]:
         _aws_profile_name = "gds-di-development-admin"
         _state_bucket_name = "digital-identity-dev-tfstate"
     elif re.match(r"^authdev[0-9]+$", deploy_env) or deploy_env == "dev":

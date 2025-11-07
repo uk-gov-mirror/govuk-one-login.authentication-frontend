@@ -24,7 +24,7 @@ resource "aws_cloudformation_stack" "cloudfront" {
 
 
   tags = (
-    var.environment == "sandpit" ?
+    var.environment == "authdev" ?
     {
       "FMSGlobalCustomPolicy"     = "true"
       "FMSGlobalCustomPolicyName" = "frontend"

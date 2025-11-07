@@ -1,7 +1,7 @@
 environment         = "authdev2"
 common_state_bucket = "di-auth-development-tfstate"
 aws_region          = "eu-west-2"
-service_domain      = "authdev2.sandpit.account.gov.uk"
+service_domain      = "authdev2.dev.account.gov.uk"
 session_expiry      = 300000
 redis_node_size     = "cache.t2.micro"
 vpc_environment     = "dev"
@@ -43,15 +43,15 @@ new_auth_protectedsub_cidr_blocks = ["10.6.4.0/23", "10.6.6.0/23", "10.6.8.0/23"
 
 orch_to_auth_signing_public_key = "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE/Yz722IDLN1mPqkPTihkwAkp/rUm\nBhnWynwAkE/YZlskX+N7VmwIjupla7O6hczlIOqkmPdQ1ayDqI8yY2QOiw==\n-----END PUBLIC KEY-----"
 orch_to_auth_client_id          = "orchestrationAuth"
-orch_to_auth_audience           = "https://signin.authdev2.sandpit.account.gov.uk/"
+orch_to_auth_audience           = "https://signin.authdev2.dev.account.gov.uk/"
 
 orch_stub_to_auth_signing_public_key = "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEwe8ey1GnTbH6E69EJFUkt4WQc1Kl\ntJwzOYNWUmK/+GxooRp+j9i9KWQ0WlV4gVI0iQkHY3ZKq+RWk94tSDHbyQ==\n-----END PUBLIC KEY-----"
 orch_stub_to_auth_client_id          = "orchestrationAuth"
-orch_stub_to_auth_audience           = "https://signin.authdev2.sandpit.account.gov.uk/"
+orch_stub_to_auth_audience           = "https://signin.authdev2.dev.account.gov.uk/"
 
 dynatrace_secret_arn = "arn:aws:secretsmanager:eu-west-2:216552277552:secret:DynatraceNonProductionVariables"
 
-analytics_cookie_domain = ".authdev2.sandpit.account.gov.uk"
+analytics_cookie_domain = ".authdev2.dev.account.gov.uk"
 
 ip_endpoint_rate_limiting_configuration = [
   {

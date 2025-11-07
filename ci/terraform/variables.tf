@@ -9,7 +9,7 @@ variable "deployer_role_arn" {
 }
 
 variable "environment" {
-  description = "the name of the environment being deployed (e.g. sandpit, build), this also matches the PaaS space name"
+  description = "the name of the environment being deployed (e.g. authdev, build), this also matches the PaaS space name"
   type        = string
 }
 
@@ -325,7 +325,7 @@ variable "previous_auth_origin_cloakingheader" {
 variable "Add_WWWPrefix" {
   type        = bool
   default     = false
-  description = "flag to to add subdomain (www) to the frontend url eg www.signin.sandpit.account.gov.uk"
+  description = "flag to to add subdomain (www) to the frontend url eg www.signin.dev.account.gov.uk"
 }
 
 variable "Fraud_Header_Enabled" {
